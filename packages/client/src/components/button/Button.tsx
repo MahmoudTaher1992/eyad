@@ -1,39 +1,32 @@
-import React from "react";
-import "../../Styles/button.css";
+import React from 'react';
+import './button.scss';
 
-interface Button_2_Props {
-  primary?: boolean;
-  success?: boolean;
-  dark?: boolean;
-  info?: boolean;
-  backgroundColor?: string;
-  size?: "small" | "medium" | "large";
+export enum ButtonType {
+  PRIMARY = 'primary',
+  SUCCESS = 'success',
+  DARK = 'dark',
+  INFO = 'info',
+  SECONDARY = 'secondary',
+}
+
+interface ButtonProps {
   label: string;
+  type?: ButtonType;
+  backgroundColor?: string;
+  size?: 'small' | 'medium' | 'large';
   onClick?: () => void;
 }
 
-const Button_2 = ({
-  primary = false,
-  success = false,
-  dark = false,
-  info = false,
-  size = "medium",
-  backgroundColor,
+export const Button = ({
   label,
+  type = ButtonType.PRIMARY,
+  size = 'medium',
+  backgroundColor,
   ...props
-}: Button_2_Props) => {
-  const mode = primary
-    ? "storybook-btn--primary"
-    : success
-    ? "storybook-btn--success"
-    : dark
-    ? "storybook-btn--dark"
-    : info
-    ? "storybook-btn--info"
-    : "storybook-btn--secondary";
+}: ButtonProps) => {
   return (
     <button
-      className={["storybook-btn", `storybook-btn--${size}`, mode].join(" ")}
+      className={['btn', `btn-${type}`, `btn-${size}`].join(' ')}
       style={{ backgroundColor }}
       type="button"
       {...props}
@@ -42,5 +35,3 @@ const Button_2 = ({
     </button>
   );
 };
-
-export default Button_2;

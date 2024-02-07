@@ -1,45 +1,51 @@
-@import "./variables.scss";
-.storybook-btn {
+@import "./../../styles/variables.scss";
+
+.btn {
   font-family: $btn-font;
   font-weight: $btn-fw;
   border: 0;
-  border-radius: $btn--borderRadius;
+  border-radius: $btn-borderRadius;
   cursor: pointer;
   display: inline-block;
   line-height: 1;
 }
-.storybook-btn--primary {
+
+.btn-primary {
   color: $font-color;
-  background-color: $btn--primary;
+  background-color: $btn-primary;
 }
 
-.storybook-btn--secondary {
+.btn-secondary {
   color: $secondary-color;
   background-color: white 20%;
 }
 
-.storybook-btn--small {
+.btn-small {
   font-size: 12px;
   padding: 10px 16px;
 }
-.storybook-btn--medium {
+
+.btn-medium {
   font-size: 14px;
   padding: 11px 20px;
 }
-.storybook-btn--large {
+
+.btn-large {
   font-size: 16px;
   padding: 12px 24px;
 }
 
-.storybook-btn--success {
-  background-color: $btn--success;
+.btn-success {
+  background-color: $btn-success;
   color: $font-color;
 }
-.storybook-btn--dark {
-  background-color: $btn--dark;
+
+.btn-dark {
+  background-color: $btn-dark;
   color: $font-color;
 }
-.storybook-btn--info {
-  background-color: $btn--info;
+
+.btn-info {
+  background-color: $btn-info;
   color: $font-color;
 }
