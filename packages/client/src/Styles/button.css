@@ -1,0 +1,49 @@
+.storybook-btn {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0.475rem;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+
+.storybook-btn--primary {
+  color: white;
+  background-color: #006ae6;
+}
+
+.storybook-btn--secondary {
+  color: black;
+  background-color: white 20%;
+}
+
+.storybook-btn--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.storybook-btn--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+.storybook-btn--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.storybook-btn--success {
+  background-color: #00a261;
+  color: white;
+}
+
+.storybook-btn--dark {
+  background-color: #272a34;
+  color: white;
+}
+
+.storybook-btn--info {
+  background-color: #883fff;
+  color: white;
+}/*# sourceMappingURL=button.css.map */

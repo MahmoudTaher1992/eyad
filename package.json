@@ -8,7 +8,9 @@
     "start-fe": "lerna run start --scope=client",
     "storybook": "lerna run storybook --scope=client"
   },
-  "dependencies": {},
+  "dependencies": {
+    "sass": "^1.70.0"
+  },
   "devDependencies": {
     "lerna": "^8.0.2"
   }
