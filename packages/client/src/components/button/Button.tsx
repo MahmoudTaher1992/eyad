@@ -1,4 +1,3 @@
-import React from "react";
 import "./button.scss";
 
 export enum ButtonType {
@@ -9,9 +8,18 @@ export enum ButtonType {
   SECONDARY = "secondary",
 }
 
+export enum ButtonHoverType {
+  hoverUp = "up",
+  hoverDown = "down",
+  hoverOut = "out",
+  hoverRotateRight = "rotate-right",
+  hoverRotateLeft = "rotate-left",
+}
+
 interface ButtonProps {
   label: string;
   type?: ButtonType;
+  hover?: ButtonHoverType;
   backgroundColor?: string;
   size?: "small" | "medium" | "large";
   onClick?: () => void;
@@ -20,13 +28,20 @@ interface ButtonProps {
 export const Button = ({
   label = "Button",
   type = ButtonType.PRIMARY,
+  hover = undefined,
   size = "medium",
   backgroundColor,
   ...props
 }: ButtonProps) => {
   return (
     <button
-      className={["btn", `btn-${type}`, `btn-${size}`].join(" ")}
+      className={[
+        "btn",
+        "btn-transition",
+        `btn-${type}`,
+        `btn-${size}`,
+        `btn-hover-${hover}`,
+      ].join(" ")}
       style={{ backgroundColor }}
       type="button"
       {...props}

@@ -49,3 +49,23 @@
   background-color: $btn-info;
   color: $font-color;
 }
+
+.btn-transition {
+  transition: $btn-transition;
+}
+
+.btn-hover-up:hover {
+  transform: translateY(-3px);
+}
+.btn-hover-down:hover {
+  transform: translateY(3px);
+}
+.btn-hover-out:hover {
+  transform: scale(1.1);
+}
+.btn-hover-rotate-right:hover {
+  transform: rotate(7deg);
+}
+.btn-hover-rotate-left:hover {
+  transform: rotate(-7deg);
+}
