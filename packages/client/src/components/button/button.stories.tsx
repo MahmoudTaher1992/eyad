@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 
-import { Button as OriginalButton, ButtonType, ButtonHoverType } from './button'
+import { Button as OriginalButton, ButtonType, ButtonHoverType } from './Button'
 
 const meta: Meta<typeof OriginalButton> = {
     component: OriginalButton,

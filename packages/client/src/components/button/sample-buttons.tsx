@@ -1,4 +1,4 @@
-import { Button, ButtonHoverType, ButtonType } from './button'
+import { Button, ButtonHoverType, ButtonType } from './Button'
 
 interface SuccessButtonProps {
     label: string

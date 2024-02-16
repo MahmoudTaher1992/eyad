@@ -1,4 +1,3 @@
-import React from 'react'
 import { Meta, StoryObj } from '@storybook/react'
 
 import { SuccessButton as OriginalSuccessButton, DangerButton as OriginalDangerButton } from './sample-buttons'
