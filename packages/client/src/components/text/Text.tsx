@@ -6,11 +6,12 @@ export enum TextStyles {
     LINE_THROUGH = 'line-through',
     UNDERLINE = 'underline',
     OVERLINE = 'overline',
+    NORMAL = 'normal',
 }
 interface textProps {
     content: string
-    text_style?: TextStyles
+    textStyles?: TextStyles
 }
-export const Text = ({ content = 'text', text_style }: textProps) => {
-    return <p className={`text-${text_style}`}>{content}</p>
+export const Text = ({ content = 'text', textStyles }: textProps) => {
+    return <p className={`text-${textStyles}`}>{content}</p>
 }

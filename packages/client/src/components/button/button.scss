@@ -1,76 +1,76 @@
-@import "./../../styles/variables.scss";
+@import './../../styles/variables.scss';
 
 .btn {
-  font-family: $btn-font;
-  font-weight: $btn-fw;
-  border: 0;
-  border-radius: $btn-borderRadius;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1;
+    font-family: $btn-font;
+    font-weight: $btn-fw;
+    border: 0;
+    border-radius: $btn-borderRadius;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
 }
 
 .btn-primary {
-  color: $font-color;
-  background-color: $btn-primary;
+    color: $font-color;
+    background-color: $btn-primary;
 }
 
 .btn-secondary {
-  color: $secondary-color;
-  background-color: white 20%;
+    color: $secondary-color;
+    background-color: white 20%;
 }
 
 .btn-small {
-  font-size: 12px;
-  padding: 10px 16px;
+    font-size: 12px;
+    padding: 5px 16px;
 }
 
 .btn-medium {
-  font-size: 14px;
-  padding: 11px 20px;
+    font-size: 14px;
+    padding: 6px 20px;
 }
 
 .btn-large {
-  font-size: 16px;
-  padding: 12px 24px;
+    font-size: 16px;
+    padding: 7px 24px;
 }
 
 .btn-success {
-  background-color: $btn-success;
-  color: $font-color;
+    background-color: $btn-success;
+    color: $font-color;
 }
 
 .btn-danger {
-  background-color: $btn-danger;
-  color: $font-color;
+    background-color: $btn-danger;
+    color: $font-color;
 }
 
 .btn-dark {
-  background-color: $btn-dark;
-  color: $font-color;
+    background-color: $btn-dark;
+    color: $font-color;
 }
 
 .btn-info {
-  background-color: $btn-info;
-  color: $font-color;
+    background-color: $btn-info;
+    color: $font-color;
 }
 
 .btn-transition {
-  transition: $btn-transition;
+    transition: $btn-transition;
 }
 
 .btn-hover-up:hover {
-  transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 .btn-hover-down:hover {
-  transform: translateY(3px);
+    transform: translateY(3px);
 }
 .btn-hover-out:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 .btn-hover-rotate-right:hover {
-  transform: rotate(7deg);
+    transform: rotate(7deg);
 }
 .btn-hover-rotate-left:hover {
-  transform: rotate(-7deg);
+    transform: rotate(-7deg);
 }

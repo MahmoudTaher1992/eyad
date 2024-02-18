@@ -1,4 +1,5 @@
 import './button.scss'
+import { Text, TextStyles } from '../text/Text'
 
 export enum ButtonType {
     PRIMARY = 'primary',
@@ -22,7 +23,7 @@ interface ButtonProps {
     label: string
     type?: ButtonType
     hover?: ButtonHoverType
-    // use enum here
+    textStyles?: TextStyles
     backgroundColor?: string
     size?: 'small' | 'medium' | 'large'
     onClick?: () => void
@@ -33,6 +34,7 @@ export const Button = ({
     type = ButtonType.PRIMARY,
     hover = undefined,
     size = 'medium',
+    textStyles = TextStyles.NORMAL,
     backgroundColor,
     onClick,
 }: ButtonProps) => {
@@ -44,7 +46,7 @@ export const Button = ({
             }}
             onClick={onClick}
         >
-            {label}
+            <Text content={label} textStyles={textStyles} />
         </button>
     )
 }
